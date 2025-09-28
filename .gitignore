@@ -2,6 +2,8 @@
 __pycache__/
 *.pyc
 .venv/
+venv/
+backend/venv/
 .env
 
 # Node
@@ -19,6 +21,8 @@ volumes/
 __pycache__/
 *.pyc
 .venv/
+venv/
+backend/venv/
 .env
 
 # Node/Next.js
