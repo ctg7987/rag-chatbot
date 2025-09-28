@@ -1,45 +1,45 @@
-# 🚀 RAG Chatbot
+# RAG Chatbot
 
-A beautiful, production-ready Retrieval-Augmented Generation (RAG) chatbot with a modern purple-themed UI, FastAPI backend, Next.js frontend, and Qdrant vector store.
+A production-ready Retrieval-Augmented Generation (RAG) chatbot with a modern purple-themed UI, FastAPI backend, Next.js frontend, and Qdrant vector store.
 
 ![RAG Chatbot Interface](https://img.shields.io/badge/Status-Implemented-brightgreen)
 
-## 🖼️ Screenshot
+## Screenshot
 
 ![RAG Chatbot Screenshot](./rag-chatbot-screenshot.png)
 
-*Beautiful purple-themed interface with centered layout, large interactive elements, and professional chat interface*
+*Purple-themed interface with centered layout, large interactive elements, and professional chat interface*
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![Next.js](https://img.shields.io/badge/Next.js-14.2+-black)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Latest-green)
 
-## ✨ Features
+## Features
 
-- 🎨 **Beautiful Purple & White UI** - Modern, centered design with large, accessible elements
-- 📄 **Document Upload** - Support for PDF, TXT, and Markdown files
-- 🤖 **Smart Chat Interface** - Real-time conversation with source citations
-- 🔍 **Semantic Search** - Advanced retrieval with reranking using cross-encoders
-- 🧠 **Dual AI Models** - OpenAI or local Sentence Transformers
-- 📊 **Source Attribution** - Citations with page numbers and file references
-- 🚀 **Production Ready** - Docker support with health checks and monitoring
+- **Purple & White UI** - Modern, centered design with large, accessible elements
+- **Document Upload** - Support for PDF, TXT, and Markdown files
+- **Smart Chat Interface** - Real-time conversation with source citations
+- **Semantic Search** - Advanced retrieval with reranking using cross-encoders
+- **Dual AI Models** - OpenAI or local Sentence Transformers
+- **Source Attribution** - Citations with page numbers and file references
+- **Production Ready** - Docker support with health checks and monitoring
 
-## 🎯 Current Implementation Status
+## Current Implementation Status
 
-### ✅ **Fully Working**
-- **Frontend UI**: Beautiful purple theme with centered, large elements
+### Fully Working
+- **Frontend UI**: Purple theme with centered, large elements
 - **Chat Interface**: Real-time messaging with purple user bubbles and white assistant bubbles
 - **Source Citations**: Purple citation cards with document icons
 - **Mock Backend**: Intelligent contextual responses based on question keywords
 - **File Upload**: Working file upload interface
 - **Responsive Design**: Professional typography and spacing
 
-### 🔧 **Mock Mode Features**
+### Mock Mode Features
 - **Contextual Responses**: Different answers for "Calvin", "second", "guy/person" queries
 - **Realistic Citations**: Appropriate filenames like "calvin-profile.pdf", "skills-document.pdf"
 - **Enhanced LLM**: Natural language responses without stub prefixes
 - **Smart Parsing**: Question keyword detection for relevant responses
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -49,7 +49,7 @@ A beautiful, production-ready Retrieval-Augmented Generation (RAG) chatbot with 
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.9+
@@ -104,18 +104,18 @@ docker-compose up --build
 - **Backend API**: http://localhost:8000
 - **Qdrant Dashboard**: http://localhost:6333
 
-## 🎨 UI Features
+## UI Features
 
 - **Purple Gradient Background** - Beautiful gradient from purple to white
 - **Centered Layout** - All elements perfectly centered for better UX
 - **Large Interactive Elements** - Bigger buttons and inputs for accessibility
 - **Card-based Design** - Clean white cards with purple accents and shadows
 - **Responsive Messages** - User messages in purple bubbles, assistant in white bubbles
-- **Source Citations** - Purple-themed citation cards with document icons (📄)
+- **Source Citations** - Purple-themed citation cards with document icons
 - **Professional Typography** - Large, bold text with proper spacing
 - **Hover Effects** - Smooth transitions on interactive elements
 
-### 🖼️ Screenshot Instructions
+### Screenshot Instructions
 To capture the current UI:
 1. Open http://localhost:3000 in your browser
 2. Take a screenshot showing:
@@ -127,13 +127,13 @@ To capture the current UI:
    - Input field and "Ask" button
 3. The UI should show a conversation with purple user messages and white assistant responses
 
-### 📸 **Recommended Screenshot Scenarios**
+### Recommended Screenshot Scenarios
 - **Empty State**: Show the clean interface before any conversation
 - **Active Chat**: Display a conversation with user questions and assistant responses
 - **With Citations**: Show source cards below assistant responses
 - **File Upload**: Capture the upload interface in action
 
-### 🎨 **UI Design Highlights**
+### UI Design Highlights
 - **Color Scheme**: Purple (#9333ea) and white with gradient backgrounds
 - **Typography**: Large, bold headings with proper hierarchy
 - **Spacing**: Generous padding and margins for accessibility
@@ -141,7 +141,7 @@ To capture the current UI:
 - **Borders**: Rounded corners (1rem radius) for modern look
 - **Hover States**: Smooth color transitions on interactive elements
 
-## 📡 API Endpoints
+## API Endpoints
 
 ### Health Check
 ```bash
@@ -163,7 +163,7 @@ curl -X POST http://localhost:8000/ask \
 # Returns: {"answer": "...", "citations": [...]}
 ```
 
-## 🔧 Configuration
+## Configuration
 
 ### Environment Variables
 ```bash
@@ -180,7 +180,7 @@ COLLECTION_NAME=docs
 - **With OpenAI Key**: Uses `text-embedding-3-small` + `gpt-4o-mini`
 - **Without Key**: Uses `sentence-transformers/all-MiniLM-L6-v2` + stub LLM
 
-## 🧪 Testing
+## Testing
 
 ### Backend Components
 ```bash
@@ -199,7 +199,7 @@ print(f'Embedding: {emb.name} (dim: {emb.dim})')
 2. Ask a question about the document
 3. Verify citations are displayed correctly
 
-## 🎯 Usage Workflow
+## Usage Workflow
 
 1. **Upload Documents** - Use the purple "Choose Files" button
 2. **Wait for Processing** - Documents are chunked and embedded
@@ -207,7 +207,7 @@ print(f'Embedding: {emb.name} (dim: {emb.dim})')
 4. **Get Answers** - Receive responses with source citations
 5. **View Sources** - Click on citation cards to see source details
 
-## 🚀 Production Deployment
+## Production Deployment
 
 ### Docker Compose
 ```yaml
@@ -232,21 +232,21 @@ echo "QDRANT_URL=http://qdrant:6333" >> .env
 echo "COLLECTION_NAME=docs" >> .env
 ```
 
-## 🔍 Troubleshooting
+## Troubleshooting
 
 - **Port Conflicts**: Ensure ports 3000, 8000, 6333 are available
 - **Docker Issues**: Try `docker-compose down` then `docker-compose up --build`
 - **Missing Dependencies**: Run `pip install python-multipart` for file uploads
 - **UI Not Loading**: Check that both frontend and backend are running
 
-## 📊 Performance
+## Performance
 
 - **Embedding Speed**: ~100ms per document chunk
 - **Query Response**: ~500ms for semantic search + LLM
 - **Memory Usage**: ~2GB for full Sentence Transformers model
 - **Concurrent Users**: Supports 10+ simultaneous users
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch
@@ -254,10 +254,10 @@ echo "COLLECTION_NAME=docs" >> .env
 4. Test thoroughly
 5. Submit a pull request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
-**Built with ❤️ using FastAPI, Next.js, and Qdrant**
+**Built with FastAPI, Next.js, and Qdrant**
