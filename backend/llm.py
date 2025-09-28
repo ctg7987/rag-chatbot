@@ -54,10 +54,24 @@ def answer_question(question: str, docs: List[Dict[str, Any]]) -> Answer:
         content = (resp.choices[0].message.content or "").strip()
         return Answer(answer=content, citations=_format_citations(docs))
 
-    # Stub deterministic template
-    snippet = docs[0]["text"][:200].strip().replace("\n", " ")
-    reply = (
-        "[Stub LLM] Based on the context, here's a concise answer. "
-        f"If uncertain, I say I don't know. Snippet: {snippet}"
-    )
+    # Enhanced stub LLM with better responses
+    context_text = docs[0]["text"]
+    
+    # Create a more natural response based on the context
+    if len(context_text) > 100:
+        # Extract key information from the context
+        sentences = context_text.split('. ')
+        if len(sentences) > 1:
+            # Use the first meaningful sentence as the main answer
+            main_answer = sentences[0] + "."
+            if len(sentences) > 2:
+                main_answer += " " + sentences[1] + "."
+        else:
+            main_answer = context_text[:300] + "..." if len(context_text) > 300 else context_text
+    else:
+        main_answer = context_text
+    
+    # Create a more natural response
+    reply = f"Based on the available information: {main_answer}"
+    
     return Answer(answer=reply, citations=_format_citations(docs))
