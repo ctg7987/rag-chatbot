@@ -17,7 +17,7 @@ node_modules/
 # Docker
 volumes/
 
-# Python
+# Pythonn
 __pycache__/
 *.pyc
 .venv/
