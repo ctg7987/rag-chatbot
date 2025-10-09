@@ -16,7 +16,7 @@ YELLOW='\033[1;33m'
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-# Check if we're in the right directory
+# Check if we're in the right directoryyy
 if [ ! -f "README.md" ]; then
     echo -e "${RED}❌ Error: Please run this script from the rag-chatbot root directory${NC}"
     exit 1
