@@ -17,6 +17,7 @@ class Citation(BaseModel):
 class Answer(BaseModel):
     answer: str
     citations: List[Citation]
+    session_id: Optional[str] = None
 
 
 class IngestResponse(BaseModel):
