@@ -58,9 +58,9 @@ A production-ready Retrieval-Augmented Generation (RAG) chatbot with a modern pu
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Next.js UI    │    │  FastAPI API   │    │  Qdrant Vector  │
-│   (Port 3000)   │◄──►│   (Port 8000)  │◄──►│   (Port 6333)   │
-│  Purple Theme   │    │  RAG Pipeline  │    │   Database      │
+│   Next.js UI    │    │  FastAPI API    │    │  Qdrant Vector  │
+│   (Port 3000)   │◄──►│   (Port 8000)   │◄──►│   (Port 6333)   │
+│  Purple Theme   │    │  RAG Pipeline   │    │   Database      │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
