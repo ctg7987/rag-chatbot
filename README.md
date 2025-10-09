@@ -6,12 +6,6 @@ A production-ready Retrieval-Augmented Generation (RAG) chatbot with a modern pu
 ![Version](https://img.shields.io/badge/Version-2.0-blue)
 ![Features](https://img.shields.io/badge/Features-30+-green)
 
-
-
-**Quick Links:**
-- [Implementation Guide](./IMPLEMENTATION_GUIDE.md) - Setup instructions for enhanced version
-- [Enhancements Summary](./ENHANCEMENTS_SUMMARY.md) - Complete feature list and statistics
-
 ## Screenshot
 
 ![RAG Chatbot Screenshot](./rag-chatbot-screenshot.png)
