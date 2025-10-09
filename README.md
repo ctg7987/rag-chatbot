@@ -3,6 +3,16 @@
 A production-ready Retrieval-Augmented Generation (RAG) chatbot with a modern purple-themed UI, FastAPI backend, Next.js frontend, and Qdrant vector store.
 
 ![RAG Chatbot Interface](https://img.shields.io/badge/Status-Implemented-brightgreen)
+![Version](https://img.shields.io/badge/Version-2.0-blue)
+![Features](https://img.shields.io/badge/Features-30+-green)
+
+## 🎉 Version 2.0 - Major Enhancements!
+
+**NEW**: Check out [`ENHANCEMENTS_SUMMARY.md`](./ENHANCEMENTS_SUMMARY.md) for a complete list of 30+ new features!
+
+**Quick Links:**
+- 📖 [Implementation Guide](./IMPLEMENTATION_GUIDE.md) - Setup instructions for enhanced version
+- 🎯 [Enhancements Summary](./ENHANCEMENTS_SUMMARY.md) - Complete feature list and statistics
 
 ## Screenshot
 
@@ -15,6 +25,7 @@ A production-ready Retrieval-Augmented Generation (RAG) chatbot with a modern pu
 
 ## Features
 
+### Core Features (v1.0)
 - **Purple & White UI** - Modern, centered design with large, accessible elements
 - **Document Upload** - Support for PDF, TXT, and Markdown files
 - **Smart Chat Interface** - Real-time conversation with source citations
@@ -22,6 +33,18 @@ A production-ready Retrieval-Augmented Generation (RAG) chatbot with a modern pu
 - **Dual AI Models** - OpenAI or local Sentence Transformers
 - **Source Attribution** - Citations with page numbers and file references
 - **Production Ready** - Docker support with health checks and monitoring
+
+### New in v2.0 ✨
+- **Conversation History** - Persistent sessions with SQLite database
+- **Session Management** - Create, view, and delete conversation threads
+- **Document Library** - Manage uploaded files with metadata tracking
+- **Dark Mode** - Toggle between light and dark themes
+- **Interactive Citations** - Click citations to view detailed source information
+- **Streaming Responses** - Real-time SSE streaming for better UX
+- **Error Handling** - Comprehensive error notifications and logging
+- **Loading States** - Professional spinners and progress indicators
+- **Context-Aware Chat** - Use conversation history for better responses
+- **Statistics API** - Track usage and system metrics
 
 ## Current Implementation Status
 
