@@ -24,7 +24,7 @@ fi
 echo -e "${BLUE}Step 1: Backend Setup${NC}"
 echo "----------------------"
 
-# Check Python version
+# Check Python versionnn
 if ! command -v python3 &> /dev/null; then
     echo "❌ Python 3 is not installed. Please install Python 3.9+"
     exit 1
