@@ -6,13 +6,11 @@ A production-ready Retrieval-Augmented Generation (RAG) chatbot with a modern pu
 ![Version](https://img.shields.io/badge/Version-2.0-blue)
 ![Features](https://img.shields.io/badge/Features-30+-green)
 
-## 🎉 Version 2.0 - Major Enhancements!
 
-**NEW**: Check out [`ENHANCEMENTS_SUMMARY.md`](./ENHANCEMENTS_SUMMARY.md) for a complete list of 30+ new features!
 
 **Quick Links:**
-- 📖 [Implementation Guide](./IMPLEMENTATION_GUIDE.md) - Setup instructions for enhanced version
-- 🎯 [Enhancements Summary](./ENHANCEMENTS_SUMMARY.md) - Complete feature list and statistics
+- [Implementation Guide](./IMPLEMENTATION_GUIDE.md) - Setup instructions for enhanced version
+- [Enhancements Summary](./ENHANCEMENTS_SUMMARY.md) - Complete feature list and statistics
 
 ## Screenshot
 
@@ -34,7 +32,7 @@ A production-ready Retrieval-Augmented Generation (RAG) chatbot with a modern pu
 - **Source Attribution** - Citations with page numbers and file references
 - **Production Ready** - Docker support with health checks and monitoring
 
-### New in v2.0 ✨
+### New in v2.0 
 - **Conversation History** - Persistent sessions with SQLite database
 - **Session Management** - Create, view, and delete conversation threads
 - **Document Library** - Manage uploaded files with metadata tracking
